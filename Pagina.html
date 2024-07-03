@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1>Bienvenido al Examen en Línea</h1>
+            <button id="start-btn">Iniciar Examen</button>
+        </div>
+        <div id="quiz-screen" class="hidden">
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="options"></div>
+            </div>
+            <div id="controls">
+                <span id="timer">15</span>
+                <button id="next-btn" class="hidden">Siguiente Pregunta</button>
+            </div>
+        </div>
+        <div id="result-screen" class="hidden">
+            <h2 id="result-message"></h2>
+            <p>Puntuación: <span id="score"></span>/10</p>
+            <button id="retry-btn">Repetir Examen</button>
+        </div>
+        <div id="controls">
+            <div id="timer-bar">
+                <div id="progress-bar"></div>
+            </div>  
+            <span id="timer"></span>
+            <button id="next-btn" class="hidden">Siguiente Pregunta</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
